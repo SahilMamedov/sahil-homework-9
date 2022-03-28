@@ -10,10 +10,10 @@ namespace task_9.Models
     {
         private int _side;
 
-        //public Square(side)
-        //{
-        //    _side=side
-        //}
+        public Square(int side)
+        {
+            Side = side;
+        }
 
         public int Side
         {
@@ -39,7 +39,7 @@ namespace task_9.Models
         public override int CalcArea()
         {
 
-            Console.WriteLine("Square's CalcArea method worked");
+           
             return Side * Side;
            
 

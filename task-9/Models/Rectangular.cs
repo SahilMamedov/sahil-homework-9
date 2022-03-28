@@ -48,15 +48,15 @@ namespace task_9.Models
                 }
             }
         }
-        //public Rectangular(int width, int length)
-        //{
-        //    _width = width;
-        //    _length = length;
-        //}
+        public Rectangular(int width, int length)
+        {
+            Width = width;
+            Length = length;
+        }
 
         public override int CalcArea()
         {
-           Console.WriteLine("Rectangular's CalcArea method worked");
+           
            return  Width * Length;
            
         }

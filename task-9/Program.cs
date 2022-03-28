@@ -39,23 +39,22 @@ namespace task_9
                 if (variant == "1")
                 {
                     Console.WriteLine("Enter the Side");
-                    //  int side = Convert.ToInt32(Console.ReadLine());
-                    // Square square = new Square(side);
-                    Square square = new Square();
-                    square.Side = Convert.ToInt32(Console.ReadLine());
+                      int side = Convert.ToInt32(Console.ReadLine());
+                     Square square = new Square(side);
+
+                   
                     Console.WriteLine($"Result: {square.CalcArea()}");
                 }
 
                 else if (variant == "2")
                 {
                     Console.WriteLine("Enter the width of the rectangular");
-                    //  int width = Convert.ToInt32(Console.ReadLine());
+                      int width = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Enter the Length of the rectangular");
-                    // int length = Convert.ToInt32(Console.ReadLine());
-                    // Rectangular rectangular = new Rectangular(width, length);
-                    Rectangular rectangular = new Rectangular();
-                    rectangular.Width = Convert.ToInt32(Console.ReadLine());
-                    rectangular.Length = Convert.ToInt32(Console.ReadLine());
+                     int length = Convert.ToInt32(Console.ReadLine());
+
+                     Rectangular rectangular = new Rectangular(width, length);
+                    
                     Console.WriteLine($"Result: {rectangular.CalcArea()}"); 
                 }
                 else if (variant == "0")
